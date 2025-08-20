@@ -11,10 +11,8 @@ const countVowels = (s) => {
         if (vowels.includes(strLow[i])) {
             count += 1;
         }
-
     }
     return count;
-
 }
 
 // Problem 3: Check for Palindrome
@@ -88,10 +86,10 @@ const pingPong = () => {
         if (i % 3 === 0 && i % 5 === 0) {
             result.push("PingPong")
         }
-        if (i % 3 === 0) {
+        else if (i % 3 === 0) {
             result.push("Ping")
         }
-        if (i % 5 ===0 ) {
+        else if (i % 5 ===0 ) {
             result.push('Pong')
         } else {
             result.push(i)
@@ -100,5 +98,4 @@ const pingPong = () => {
     console.log(result.join(", "))
 }
 
-pingPong();
 
